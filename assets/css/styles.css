@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@import url("./styles/perfil.css");
+
+
+:root{
+    --fundo-escuro: #000;
+    --fundo-card: #1D2226;
+    --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+    
+    --texto-principal: hsla(0, 0%, 100%, 0.9);
+    --texto-secundario: hsla(0, 0%, 100%, 0.6);
+    --texto-escuro: hsla(0, 0%, 0%, 0.75);
+
+    --input: #38434F;
+    --primario: #70B5F9;
+    --positivo: #3EC786;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--texto-principal);
+    background-color: var(--fundo-escuro);
+}
+  
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(max-width: 1080px){
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width: 720px){
+    html{
+        font-size: 87.5%;
+    }
+}
