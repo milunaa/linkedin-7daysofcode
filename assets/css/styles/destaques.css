@@ -1,6 +1,11 @@
 section.card.destaques{
     padding: 1rem 1.6rem;
 }
+
+.destaques__titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
   
 .destaques .publicacoes{
     display: flex;
