@@ -1,0 +1,26 @@
+section.card.idiomas{
+    padding: 1rem 1.6rem;
+}
+
+.idiomas-titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+li.idioma{
+    margin-top: 1rem;
+}
+
+li.idioma:first-child{
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--texto-secundario);
+}
+
+li.idioma p{
+    font-weight: 600;
+}
+
+li.idoma span{
+    font-size: .875rem;
+    color: var(--texto-secundario);
+}
