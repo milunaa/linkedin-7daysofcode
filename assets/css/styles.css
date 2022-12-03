@@ -8,7 +8,7 @@
 @import url("./styles/experiencias.css");
 @import url("./styles/formacao.css");
 @import url("./styles/idiomas.css");
-
+@import url("./styles/sugestoes.css");
 
 :root{
     --fundo-escuro: #000;
@@ -28,13 +28,31 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--texto-principal);
     background-color: var(--fundo-escuro);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
 }
   
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+main > div{
+    display: flex;
     flex-direction: column;
+}
+
+main > .perfil{
+    align-items: flex-end;
+    margin-right: 1.5rem;
+}
+
+main > .sugestoes{
+    align-items: flex-start;
 }
 
 section.card{
@@ -46,14 +64,13 @@ section.card{
 }
 
 
-@media(max-width: 1080px){
-    html{
-        font-size: 93.75%;
+@media(max-width: 1024px){
+    main{
+        flex-direction: column;
+        justify-content: flex-start;
     }
-}
-
-@media(max-width: 720px){
-    html{
-        font-size: 87.5%;
+    main > .sugestoes, main > .perfil{
+        align-items: center;
+        margin-right: 0;
     }
 }
